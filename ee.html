@@ -1,0 +1,245 @@
+
+<html>
+<head>
+<title>BLUE BOOK BANK E-BOOK</title>
+
+
+<a href="bk.html">
+  <img src="BACKK.png" alt="HMS1" style="width:80px;height:80px;border:0" align ="right">
+</a>
+<a>
+  <img src="CRES.jpg" alt="HMS" style="width:80px;height:80px;border:0" align ="left">
+</a>
+<style>
+<script language="javascript">
+	function highlightSearchTerms(searchText, treatAsPhrase, warnOnFailure, highlightStartTag, highlightEndTag)
+	{
+		if (treatAsPhrase) 
+
+
+
+
+
+
+
+
+
+
+
+
+			searchArray = [searchText];
+		else
+			searchArray = searchText.split(" ");
+	
+		if (!document.body || typeof(document.body.innerHTML) == "undefined")
+		{
+			return false;
+		}
+	
+		
+		var bodyText = div1.innerHTML;
+		for (var i = 0; i < searchArray.length; i++) 
+		{
+			bodyText = doHighlight(bodyText, searchArray[i], highlightStartTag, highlightEndTag);
+		}
+		//var bodyText = div1.innerHTML;
+		//bodyText = doHighlight(bodyText, searchText, highlightStartTag, highlightEndTag);
+		div1.innerHTML = bodyText;
+		return true;
+	}
+	
+	function doHighlight(bodyText, searchTerm, highlightStartTag, highlightEndTag) 
+	{
+		if ((!highlightStartTag) || (!highlightEndTag)) 
+		{
+			highlightStartTag = "<font style='color:blue; background-color:yellow;'>";
+			highlightEndTag = "</font>";
+		}
+	
+		var newText = "";
+		var i = -1;
+		var lcSearchTerm = searchTerm.toLowerCase();
+		var lcBodyText = bodyText.toLowerCase();
+		
+		while (bodyText.length > 0) 
+		{
+			i = lcBodyText.indexOf(lcSearchTerm, i+1);
+			if (i < 0) 
+			{
+				newText += bodyText;
+				bodyText = "";
+			} 
+			else 
+			{
+				// skip anything inside an HTML tag
+				if (bodyText.lastIndexOf(">", i) >= bodyText.lastIndexOf("<", i)) 
+				{
+					// skip anything inside a <script> block
+					if (lcBodyText.lastIndexOf("/script>", i) >= lcBodyText.lastIndexOf("<script", i)) 
+					{
+						newText += bodyText.substring(0, i) + highlightStartTag + bodyText.substr(i, searchTerm.length) + highlightEndTag;
+						bodyText = bodyText.substr(i + searchTerm.length);
+						lcBodyText = bodyText.toLowerCase();
+						i = -1;
+					}
+				}
+			}
+		}
+		return newText;
+	}
+	</script>
+</head>
+
+<body bgcolor="#E8E8E8" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
+<table width='100%' cellspacing='0' cellpadding='0' border='0'><td bgcolor='white'>
+
+<style>
+   
+
+
+
+
+.header{
+	position: absolute;
+	top: calc(50% - 290px);
+	left: calc(50% - 590px);
+	z-index: 2;
+}
+.header div{
+	float: left;
+	color: #000;
+	font-family: 'Exo', CAMBRIA;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+</style>
+   
+
+<div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+                 <div>SYLLABUS <span>E-BOOKS</span></div>
+		</div>
+		<br>
+</td></table><center>
+
+<center>
+<form name="form-e" id="form-e" action="q_word.php" method="get">
+ <input maxlength="250" size="30" name="T1" type="text">
+ <input name="m_field" value="title" type="hidden">
+ <input name="m_match" value="Words" &gt;="" type="hidden">
+ <input name="m_media" value="30" type="hidden">
+ <input name="m_ebk" value="1" type="hidden">
+ <input name="B1" value="Submit" type="submit">
+<!-- <input type="submit" name="ebk" value="All Ebooks">
+    onClick='document.location.assign("http://10.99.100.40/webopac8/q_word.php?T1=E-book&m_field=title&m_match=Words&m_media=30&B1=Submit&m_location=1&m_ebk=1")'> !-->
+</form>
+</center>
+
+
+	<form action="q_word.php" method="post" name="form1"><td>
+	
+	<br>
+	<div id="div1">
+<table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3802</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Kempe, Volker";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Kempe, Volker</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327988');" title="View Book Details">
+<font face="<s_i_font>" size=2>Inertial MEMS : principles and practice (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Cambridge : Cambridge University Press 2011</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://ebooks.cambridge.org/ebook.jsf?bid=CBO9780511933899" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://ebooks.cambridge.org/ebook.jsf?bid=CBO9780511933899</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3801</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Dutta, Amit";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Dutta, Amit</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327987');" title="View Book Details">
+<font face="<s_i_font>" size=2>Quantum phase transitions in transverse field spin models (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Cambridge : Cambridge University Press 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://ebooks.cambridge.org/ebook.jsf?bid=CBO9781107706057" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://ebooks.cambridge.org/ebook.jsf?bid=CBO9781107706057</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3800</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Mark, James E.";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Mark, James E.</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327748');" title="View Book Details">
+<font face="<s_i_font>" size=2>Science and technology of rubber (e-book)</a><font face=s_font size=2>&nbsp;,&nbsp;4th ed</font></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Amsterdam : Academic Press 2013</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://www.sciencedirect.com/science/book/9780123945846" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://www.sciencedirect.com/science/book/9780123945846</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3799</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Acharya, Rajat";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Acharya, Rajat</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327747');" title="View Book Details">
+<font face="<s_i_font>" size=2>Understanding satellite navigation (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Amsterdam : Academic Press 2014</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://www.sciencedirect.com/science/book/9780127999494" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://www.sciencedirect.com/science/book/9780127999494</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3798</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Zuyev, Alexander L.";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Zuyev, Alexander L.</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327223');" title="View Book Details">
+<font face="<s_i_font>" size=2>Partial stabilization and control of distributed parameter systems with elastic elements (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Berlin : Springer 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://link.springer.com/openurl?genre=book&isbn=978-3-319-11531-3" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://link.springer.com/openurl?genre=book&isbn=978-3-319-11531-3</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3797</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Djemai, Mohamed";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Djemai, Mohamed</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327222');" title="View Book Details">
+<font face="<s_i_font>" size=2>Hybrid dynamical systems : observation and control (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Berlin : Springer 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://link.springer.com/openurl?genre=book&isbn=978-3-319-10794-3" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://link.springer.com/openurl?genre=book&isbn=978-3-319-10794-3</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3796</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Schuppen, Jan H. van";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Schuppen, Jan H. van</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327221');" title="View Book Details">
+<font face="<s_i_font>" size=2>Coordination control of distributed systems (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Berlin : Springer 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://link.springer.com/openurl?genre=book&isbn=978-3-319-10406-5" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://link.springer.com/openurl?genre=book&isbn=978-3-319-10406-5</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3795</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Suekane, Fumihiko";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Suekane, Fumihiko</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327220');" title="View Book Details">
+<font face="<s_i_font>" size=2>Neutrino oscillations : a practical guide to basics and applications (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Berlin : Springer 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://link.springer.com/openurl?genre=book&isbn=978-4-431-55461-5" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://link.springer.com/openurl?genre=book&isbn=978-4-431-55461-5</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3794</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Pfister, Herbert";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Pfister, Herbert</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327219');" title="View Book Details">
+<font face="<s_i_font>" size=2>Inertia and gravitation : the fundamental nature and structure of space-time (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Berlin : Springer 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://link.springer.com/openurl?genre=book&isbn=978-3-319-15035-2" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://link.springer.com/openurl?genre=book&isbn=978-3-319-15035-2</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3793</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Becher, Thomas";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Becher, Thomas</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327218');" title="View Book Details">
+<font face="<s_i_font>" size=2>Introduction to soft-collinear effective theory (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Berlin : Springer 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://link.springer.com/openurl?genre=book&isbn=978-3-319-14847-2" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://link.springer.com/openurl?genre=book&isbn=978-3-319-14847-2</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3792</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Padmanabhan, Thanu";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Padmanabhan, Thanu</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327217');" title="View Book Details">
+<font face="<s_i_font>" size=2>Sleeping beauties in theoretical physics (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Berlin : Springer 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://link.springer.com/openurl?genre=book&isbn=978-3-319-13442-0" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://link.springer.com/openurl?genre=book&isbn=978-3-319-13442-0</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3791</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Feranchuk, I.D. ...[et al.]";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Feranchuk, I.D. ...[et al.]</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327216');" title="View Book Details">
+<font face="<s_i_font>" size=2>Non-perturbative description of quantum systems (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Berlin : Springer 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://link.springer.com/openurl?genre=book&isbn=978-3-319-13005-7" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://link.springer.com/openurl?genre=book&isbn=978-3-319-13005-7</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3790</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Francois, David";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Francois, David</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327215');" title="View Book Details">
+<font face="<s_i_font>" size=2>Formalisms of quantum mechanics : an introduction (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Berlin : Springer 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://link.springer.com/openurl?genre=book&isbn=978-3-319-10538-3" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://link.springer.com/openurl?genre=book&isbn=978-3-319-10538-3</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3789</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Papantonopoulos, Eleftherios";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Papantonopoulos, Eleftherios</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327214');" title="View Book Details">
+<font face="<s_i_font>" size=2>Modifications of Einstein's theory of gravity at large distances (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Berlin : Springer 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://link.springer.com/openurl?genre=book&isbn=978-3-319-10069-2" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://link.springer.com/openurl?genre=book&isbn=978-3-319-10069-2</b></font></a></font></td></tr></table><br></td>
+		</table><table bgcolor="white" width="95%" align="center" border=0 cellspacing=0 cellpadding=1><tr><td valign="top" rowspan="5" width="15%"><font face="<Arial>" size=2>&nbsp;<b>EBK3788</b><br><font color="blue">&nbsp; </font><b><font color="red">&nbsp;&nbsp;</font></b></td></tr><tr><td colspan="2"><font face=Arial size=2><a href='#' onClick='javascript:document.form1.T1.value="Iachello, Fransceso";javascript:document.form1.m_field.value="author";javascript:document.form1.submit()' title='Search by Author'>Iachello, Fransceso</a></font></td></tr>		<tr>
+			<td>
+				<a HREF="javascript:void(0)" onclick="openwin('327213');" title="View Book Details">
+<font face="<s_i_font>" size=2>Lie algebras and applications (e-book)</a></td><td width='8%'><font color='white' face=s_font size=2>ONLINE</font></td></tr>		<tr>
+		<td colspan="3">
+<font face=s_font size=2>Berlin : Springer 2015</font></td></tr><tr><td colspan="2"><font face="s_font" size=2><a href="http://link.springer.com/openurl?genre=book&isbn=978-3-662-44493-1" title="Click to View E-Book Online!" target="_blank"  style="text-decoration:none"><font color="brown" ><b>http://link.springer.com/openurl?genre=book&isbn=978-3-662-44493-1</b></font></a></font></td></tr></table><br></td>
+		</table></div><br><center>
+		
+
+</td></table>
+
+
+</body>
+</html>
